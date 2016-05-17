@@ -3,7 +3,7 @@
   "description": "basic chat app",
   "version": "0.4.2",
   "meanjs-version": "0.4.2",
-  "private": false,
+  "private": true,
   "author": "mpatc",
   "license": "MIT",
   "repository": {
