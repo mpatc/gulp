@@ -1,6 +1,6 @@
 [![mpatc Logo](http://s32.postimg.org/5yhtdaxhh/Drawing_9.png)](http://github.com/mpatc)
 
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/meanjs/mean?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Gitter](https://badges.gitter.im/mpatc/gulp.svg)](https://gitter.im/mpatc/gulp?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 [![Build Status](https://travis-ci.org/mpatc/gulp.svg?branch=master)](https://travis-ci.org/mpatc/gulp)
 [![Dependencies Status](https://david-dm.org/meanjs/mean.svg)](https://david-dm.org/meanjs/mean)
 [![Coverage Status](https://coveralls.io/repos/meanjs/mean/badge.svg?branch=master&service=github)](https://coveralls.io/github/meanjs/mean?branch=master)
