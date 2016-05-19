@@ -6,6 +6,7 @@ module.exports = function (io, socket) {
   io.emit('chatMessage', {
     type: 'status',
     text: 'Is now connected',
+    players: io.engine.clientsCount,
     created: Date.now(),
     profileImageURL: socket.request.user.profileImageURL,
     username: socket.request.user.username
@@ -15,6 +16,7 @@ module.exports = function (io, socket) {
   socket.on('chatMessage', function (message) {
     message.type = 'message';
     message.created = Date.now();
+    message.players = io.engine.clientsCount;
     message.profileImageURL = socket.request.user.profileImageURL;
     message.username = socket.request.user.username;
 

@@ -1,7 +1,36 @@
 <!-- The chat view -->
 <section class="container" ng-controller="ChatController">
   <div class="page-header">
-    <h1>Chat Example</h1>
+    <h1>Fun multiplayer game</h1>
+    <h2>Number of players {{players}}</h2>
+    <h3 data-ng-show="gameReady">category: {{cat}} </h3>
+    <h3 data-ng-show="gameReady">score: {{player1score}} </h3>
+    <div class="row">
+<form ng-submit="sendGame3();" class="col-lg-6">
+  <div class="input-group" data-ng-show="gameReady">
+     <span class="input-group-btn">
+       <button class="btn btn-success" type="submit">Start Play!</button>
+     </span>
+    <input type="number" min="1" max="10" id="player1score" name="player1score" ng-model="player1score">
+  </div>
+</form>
+  <form ng-submit="sendGame();" class="col-lg-6">
+    <div class="input-group" data-ng-hide="isGame || gameReady">
+      <span class="input-group-btn">
+        <button class="btn btn-secondary" ng-disabled="!gameText1.length" type="submit">Player 1 Go!</button>
+      </span>
+      <input type="text" id="gameText1" name="gameText1" class="form-control" ng-model="gameText1" placeholder="Enter your name, player 1">
+    </div>
+  </form>
+  <form ng-submit="sendGame2();" class="col-lg-6">
+    <div class="input-group" data-ng-show="isGame">
+      <input type="text" id="gameText2" name="gameText2" class="form-control" ng-model="gameText2" placeholder="Enter your name, player 2">
+      <span class="input-group-btn">
+        <button class="btn btn-secondary" ng-disabled="!gameText2.length" type="submit">Player 2 Go!</button>
+      </span>
+    </div>
+  </form>
+</div>
   </div>
   <!-- The message form -->
   <form class="col-xs-12 col-md-offset-4 col-md-4" ng-submit="sendMessage();">

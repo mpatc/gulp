@@ -7,7 +7,7 @@ var _ = require('lodash'),
   defaultAssets = require('./config/assets/default'),
   testAssets = require('./config/assets/test'),
   testConfig = require('./config/env/test'),
-  karmaReporters = ['progress'];
+  karmaReporters = ['coverage', 'progress'];
 
 if (testConfig.coverage) {
   karmaReporters.push('coverage');
