@@ -6,6 +6,8 @@
 [![Coverage Status](https://coveralls.io/repos/meanjs/mean/badge.svg?branch=master&service=github)](https://coveralls.io/github/meanjs/mean?branch=master)
 
 ## License
+
+[![Join the chat at https://gitter.im/mpatc/gulp](https://badges.gitter.im/mpatc/gulp.svg)](https://gitter.im/mpatc/gulp?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 (The MIT License)
 
 Permission is hereby granted, free of charge, to any person obtaining
