@@ -1,11 +1,13 @@
 <section>
   <div class="page-header">
     <h1 data-ng-bind="vm.picture.name"></h1>
+    <ul>
+      <li> <img src="{{vm.picture.image}}" alt="{{picture.name}}">
+      </li>
+    </ul>
   </div>
-  <div class="pull-right"
-       data-ng-show="vm.picture.isCurrentUserOwner">
-    <a class="btn btn-primary"
-       data-ui-sref="pictures.edit({ pictureId: vm.picture._id })">
+  <div class="pull-right" data-ng-show="vm.picture.isCurrentUserOwner">
+    <a class="btn btn-primary" data-ui-sref="pictures.edit({ pictureId: vm.picture._id })">
       <i class="glyphicon glyphicon-edit"></i>
     </a>
     <a class="btn btn-primary" data-ng-click="vm.remove()">

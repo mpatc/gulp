@@ -14,6 +14,9 @@
         <span data-ng-if="!picture.user">Deleted User</span>
       </small>
       <h4 class="list-group-item-heading" data-ng-bind="picture.name"></h4>
+      <ul>
+      <li class="list-group-item-heading"><img src="{{picture.image}}" alt="{{picture.name}}"></li>
+      </ul>
     </a>
   </div>
   <div class="alert alert-warning text-center" data-ng-if="vm.pictures.$resolved && !vm.pictures.length">
