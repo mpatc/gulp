@@ -5,6 +5,7 @@
 [![Dependencies Status](https://david-dm.org/mpatc/gulp.svg)](https://david-dm.org/mpatc/gulp)
 [![Coverage Status](https://coveralls.io/repos/github/mpatc/gulp/badge.svg?branch=master)](https://coveralls.io/github/mpatc/gulp?branch=master)
 
+[![bitcoin](https://localbitcoins.com/ad-embed/271916/half-banner)](https://localbitcoins.com/ad/271916)
 
 ## License
 
