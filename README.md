@@ -1,4 +1,4 @@
-[![MEAN.JS Logo](http://meanjs.org/img/logo-small.png)](http://meanjs.org/)
+[![mpatc Logo](http://s32.postimg.org/5yhtdaxhh/Drawing_9.png)](http://github.com/mpatc)
 
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/meanjs/mean?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/mpatc/gulp.svg?branch=master)](https://travis-ci.org/mpatc/gulp)
