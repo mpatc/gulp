@@ -36,6 +36,8 @@ after_script:
   - nsp audit-package
   - grunt coverage
 notifications:
+  email:
+    - mpatrickclancy@gmail.com
   webhooks:
     urls:
       - $GITTER_IM_URL
