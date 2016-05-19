@@ -7,9 +7,6 @@
 
 [![bitcoin](https://localbitcoins.com/signature/271916/)](https://localbitcoins.com/ad/271916)
 
-[url=https://localbitcoins.com/ad/271916/purchase-bitcoin-bank-transfer-korea-republic-of-korea-republic-of][img]https://localbitcoins.com/signature/271916/[/img][/url]
- 
-
 ## License
 
 (The MIT License)
