@@ -37,6 +37,8 @@ angular.module('chat').controller('ChatController', ['$scope', '$location', 'Aut
       $scope.startGame = message.startGame;
       $scope.messages.unshift(message);
     });
+    // var board1 = ChessBoard('board1', 'start');
+    // $scope.board1 = board1;
     $scope.sendGame = function () {
       // Create a new message object
       var message = {
@@ -98,5 +100,10 @@ angular.module('chat').controller('ChatController', ['$scope', '$location', 'Aut
     $scope.$on('$destroy', function () {
       Socket.removeListener('chatMessage');
     });
+    $(document).ready(function(){
+      console.log('hello');
+      alert('hello');
+      var board1 = ChessBoard('board1', 'start');
+    })
   }
 ]);
