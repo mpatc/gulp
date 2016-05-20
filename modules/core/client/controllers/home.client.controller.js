@@ -117,7 +117,6 @@ angular.module('core').controller('HomeController', ['$state', '$scope', '$http'
         Ledger._options.callback(event.data);
       },
       _do_poll_session: function() {
-        Ledger.hasSession();
         if (Ledger._should_poll_session) {
           setTimeout(Ledger._do_poll_session, 500);
         }

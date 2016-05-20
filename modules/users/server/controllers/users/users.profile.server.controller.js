@@ -9,8 +9,10 @@ var _ = require('lodash'),
   errorHandler = require(path.resolve('./modules/core/server/controllers/errors.server.controller')),
   mongoose = require('mongoose'),
   multer = require('multer'),
+  // AWS = require('aws-sdk'),
   config = require(path.resolve('./config/config')),
   User = mongoose.model('User');
+  // s3 = new AWS.s3();
 
 /**
  * Update user details
@@ -55,10 +57,12 @@ exports.update = function (req, res) {
  */
 exports.changeProfilePicture = function (req, res) {
   var user = req.user;
+  console.log('req.body: ', req.body);
+  console.log('req.file: ', req.file);
   var message = null;
   var upload = multer(config.uploads.profileUpload).single('newProfilePicture');
   var profileUploadFileFilter = require(path.resolve('./config/lib/multer')).profileUploadFileFilter;
-  
+
   // Filtering to upload only images
   upload.fileFilter = profileUploadFileFilter;
 
@@ -69,8 +73,10 @@ exports.changeProfilePicture = function (req, res) {
           message: 'Error occurred while uploading profile picture'
         });
       } else {
+
         user.profileImageURL = config.uploads.profileUpload.dest + req.file.filename;
 
+        console.log('user.profileImageURL: ', user.profileImageURL)
         user.save(function (saveError) {
           if (saveError) {
             return res.status(400).send({
